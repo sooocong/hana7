@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Hello</title>
+    <style>
+      .red {
+        color: red;
+      }
+    </style>
+
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+
+    <script>
+      console.log("***");
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+  </head>
+
+  <body class="ml-5 mt-[23px]">
+    <h1
+      class="text-3xl font-bold underline text-white bg-mintleaf w-1/3 text-center p-1 rounded-lg"
+    >
+      Hello
+    </h1>
+    <header class="red">Header</header>
+    <nav>Nav</nav>
+    <section class="bg-black text-white">Section</section>
+    <aside>Aside</aside>
+
+    <form
+      id="frm"
+      name="frm"
+      method="POST"
+      class="border-2 border-green-500 p-3"
+    >
+      <div class="md:flex md:gap-2">
+        <input
+          type="email"
+          id="email"
+          placeholder="Email..."
+          class="border rounded-md px-q focus-outline-none md:w-1/2"
+        />
+        <input
+          type="password"
+          id="pw"
+          placeholder="Password..."
+          class="border rounded-md px-q focus-outline-none w-1/2"
+        />
+      </div>
+      <div class="flex justify-around">
+        <button
+          class="bg-gray-500 hover:bg-black text-white px-2 rounded-md shadow-md"
+          type="reset"
+        >
+          Reset
+        </button>
+        <button
+          class="hover:bg-black text-mintleaf px-2 rounded-md shadow-md"
+          type="delete"
+        >
+          Delete
+        </button>
+        <button
+          class="bg-sky-500 hover:bg-sky-700 text-white px-2 rounded-md shadow-md"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+
+    <div>Yesterday is history.</div>
+    <div>
+      <strong>Tommorrow </strong>is mystery.
+      <span id="upper"
+        >Today is a gift.
+        <span class="inner">Inner Span</span>
+      </span>
+    </div>
+
+    <div>That's why it is called the present.</div>
+    <ul class="list-decimal list-inside">
+      <li class="first: pt-5 mr-24 flex justify-between h-24">
+        <img
+          src="./images/author-01.jpg"
+          alt="blog-author-01"
+          class="rounded-full"
+        />
+        <small class="bg-green-500">remark..</small>
+      </li>
+      <li class="last:mb-5">222</li>
+      <li class="last:mb-5">333</li>
+    </ul>
+
+    <footer>Footer</footer>
+  </body>
+</html>
