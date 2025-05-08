@@ -5,11 +5,15 @@ services:
     ports:
       - 3309:3306
     environment:
-      MYSQL_ROOT_PASSWORD: 3620
-      MYSQL_DATABASE: hanaro7
+      MYSQL_ROOT_PASSWORD: TestdbRoot
+      MYSQL_DATABASE: testdb
     command:
       - --character-set-server=utf8mb4
       - --collation-server=utf8mb4_unicode_ci
       - --log_bin_trust_function_creators=1
+      - --innodb_ft_min_token_size=2
+      - --innodb_ft_server_stopword_table=testdb/StopWord
+      - --innodb_ft_aux_table=testdb/Notice
+
     volumes:
       - ./mysql:/var/lib/mysql
